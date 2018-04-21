@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.labelName = new System.Windows.Forms.Label();
-            this.dataGridViewData = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.buttonShow = new System.Windows.Forms.Button();
             this.textBoxFilter = new System.Windows.Forms.TextBox();
             this.buttonFilter = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // labelName
@@ -45,14 +45,14 @@
             this.labelName.TabIndex = 0;
             this.labelName.Text = "Adam Skowronski";
             // 
-            // dataGridViewData
+            // dataGridView
             // 
-            this.dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewData.Location = new System.Drawing.Point(68, 112);
-            this.dataGridViewData.Name = "dataGridViewData";
-            this.dataGridViewData.RowTemplate.Height = 28;
-            this.dataGridViewData.Size = new System.Drawing.Size(954, 280);
-            this.dataGridViewData.TabIndex = 1;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(68, 112);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowTemplate.Height = 28;
+            this.dataGridView.Size = new System.Drawing.Size(954, 280);
+            this.dataGridView.TabIndex = 1;
             // 
             // buttonShow
             // 
@@ -89,11 +89,11 @@
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.textBoxFilter);
             this.Controls.Add(this.buttonShow);
-            this.Controls.Add(this.dataGridViewData);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.labelName);
             this.Name = "mainWindow";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,7 +102,7 @@
         #endregion
 
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.DataGridView dataGridViewData;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button buttonShow;
         private System.Windows.Forms.TextBox textBoxFilter;
         private System.Windows.Forms.Button buttonFilter;

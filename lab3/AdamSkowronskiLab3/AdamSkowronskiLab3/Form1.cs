@@ -26,7 +26,7 @@ namespace AdamSkowronskiLab3
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM pizzas",connection);
             DataTable table = new DataTable();
             adapter.Fill(table);
-            dataGridViewData.DataSource = table;
+            dataGridView.DataSource = table;
         }
 
         private void buttonFilter_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace AdamSkowronskiLab3
             SqlDataAdapter adapter = new SqlDataAdapter($"SELECT * FROM pizzas WHERE Price > 0{textBoxFilter.Text}", connection);
             DataTable table = new DataTable();
             adapter.Fill(table);
-            dataGridViewData.DataSource = table;
+            dataGridView.DataSource = table;
         }
     }
 }
