@@ -10,29 +10,29 @@ namespace AdamSkowronskiLab2Zad1
     {
         public override void Attack(object opponent)
         {
-            Hero a = (Hero)opponent; //kopia argumentu wejsciowgo i rzutowanie na Hero
-            Random rnd = new Random();
-            if (rnd.Next(0, 100) > 60) //szansa 60%
+            Hero temporaryHero = (Hero)opponent; //kopia argumentu wejsciowgo i rzutowanie na Hero
+            Random random = new Random();
+            if (random.Next(0, 100) > 60) //szansa 60%
             {
-                
-                a.ChangeHealth(-Damage);
+
+                temporaryHero.ChangeHealth(-damage);
                 
             }
             else
             {
-                a.ChangeHealth(-Damage - 100); //szansa na dodatkowe obrazenia 
+                temporaryHero.ChangeHealth(-damage - 100); //szansa na dodatkowe obrazenia 
             }
 
-            opponent = a; //ustawienie argumentu wejsciowego
+            opponent = temporaryHero; //ustawienie argumentu wejsciowego
         }
 
         public override void ChangeHealth(int value)
         {
-            Health += value;
+            health += value;
             Random rnd = new Random();
             if (rnd.Next(0,100) < 40 ) //szansa 40%
             {
-                Health += 100; //uzdrowienie 100 pkt zdrowia
+                health += 100; //uzdrowienie 100 pkt zdrowia
             }
         }
         /// <summary>
@@ -42,10 +42,10 @@ namespace AdamSkowronskiLab2Zad1
         /// <param name="damage"></param>
         public MonsterLevel2(int health, int damage, System.Drawing.Bitmap image)
         {
-            this.Health = health;
-            this.MaxHealth = health;
-            this.Damage = damage;
-            this.Image = image;
+            this.health = health;
+            this.maxHealth = health;
+            this.damage = damage;
+            this.image = image;
         }
     }
 }

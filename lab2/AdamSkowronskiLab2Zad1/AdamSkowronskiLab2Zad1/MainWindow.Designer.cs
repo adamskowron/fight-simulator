@@ -1,6 +1,6 @@
 ﻿namespace AdamSkowronskiLab2Zad1
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -118,9 +118,9 @@
             // 
             this.pictureBoxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxBackground.Image = global::AdamSkowronskiLab2Zad1.Properties.Resources.background;
-            this.pictureBoxBackground.Location = new System.Drawing.Point(0, 33);
+            this.pictureBoxBackground.Location = new System.Drawing.Point(0, 40);
             this.pictureBoxBackground.Name = "pictureBoxBackground";
-            this.pictureBoxBackground.Size = new System.Drawing.Size(1278, 592);
+            this.pictureBoxBackground.Size = new System.Drawing.Size(1278, 585);
             this.pictureBoxBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBackground.TabIndex = 0;
             this.pictureBoxBackground.TabStop = false;
@@ -289,37 +289,39 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.restartToolStripMenuItem,
             this.aboutToolStripMenuItem,
+            this.restartToolStripMenuItem,
             this.autorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1278, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1278, 40);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(78, 36);
             this.restartToolStripMenuItem.Text = "Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
+            this.aboutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.SteelBlue;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(100, 36);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // autorToolStripMenuItem
             // 
             this.autorToolStripMenuItem.Name = "autorToolStripMenuItem";
-            this.autorToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
+            this.autorToolStripMenuItem.Size = new System.Drawing.Size(69, 36);
             this.autorToolStripMenuItem.Text = "Autor";
             this.autorToolStripMenuItem.Click += new System.EventHandler(this.autorToolStripMenuItem_Click);
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -346,8 +348,8 @@
             this.Controls.Add(this.pictureBoxBackground);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainWindow";
+            this.Text = "Simulator";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOpponent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackground)).EndInit();

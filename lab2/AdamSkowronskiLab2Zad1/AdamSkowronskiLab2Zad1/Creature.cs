@@ -11,29 +11,29 @@ namespace AdamSkowronskiLab2Zad1
     /// </summary>
     abstract class Creature: Fightable
     {
-       protected int Health;
-       protected int MaxHealth;
-       protected int Damage;
-       protected System.Drawing.Bitmap Image; // zmienna do przechowania animacji
+       protected int health;
+       protected int maxHealth;
+       protected int damage;
+       protected System.Drawing.Bitmap image; // zmienna do przechowania animacji
 
 
 
         abstract public void Attack(object opponent); //impelmentacja interfejsu Fightable
         virtual public void ChangeHealth(int value) //impelmentacja interfejsu Fightable
         {
-            Health += value; 
+            health += value; 
         }
          public int GetHealth()
         {
-            return Health;
+            return health;
         }
          public int GetMaxHealth()
         {
-            return MaxHealth;
+            return maxHealth;
         }
         public System.Drawing.Bitmap GetImage() //getter obrazka
         {
-            return Image;
+            return image;
         }
     }
 }

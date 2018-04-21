@@ -10,9 +10,9 @@ namespace AdamSkowronskiLab2Zad1
     {
         public override void Attack(object opponent)
         {
-            Hero a = (Hero)opponent;
-            a.ChangeHealth(-Damage);
-            opponent = a;
+            Hero temporaryHero = (Hero)opponent;
+            temporaryHero.ChangeHealth(-damage);
+            opponent = temporaryHero;
         }
         /// <summary>
         /// konstruktor z 3 parametrami
@@ -22,10 +22,10 @@ namespace AdamSkowronskiLab2Zad1
 
         public MonsterLevel1(int health, int damage, System.Drawing.Bitmap image)
         {
-            this.Health = health;
-            this.MaxHealth = health;
-            this.Damage = damage;
-            this.Image = image;
+            this.health = health;
+            this.maxHealth = health;
+            this.damage = damage;
+            this.image = image;
         }
     }
 }

@@ -5,23 +5,23 @@ using System.Windows.Forms;
 
 namespace AdamSkowronskiLab2Zad1
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         private Hero player;
         private int healthPotionCounter = 0;
         private int conditionPotionCounter = 0;
         private List<Creature> monsters; // lista obiektow abstrakcyjnej klasy Creature z przeciwnikami (beda do niej dodawane obiekty dziedziczace po tej klasie)
-        private const int attackAnimationLenght = 1000; //dlugosc gifa atakujacego bohatera trwa dokladnie 1 sekunde
+        private const int AttackAnimationLenght = 800; //stala - dlugosc gifa atakujacego bohatera trwa 800 ms
         private int timerIndex = 0; //index dla timera do odmierzania odcinkow czasu
-        private const string about = "Program jest symulatorem walki gracza z 3 kolejno silniejszymi potworami" +
+        private const string About = "Program jest symulatorem walki gracza z 3 kolejno silniejszymi potworami" +
             ". Kazda rozgrywka powinna wygladac inaczej, poniewaz kazdy poziom potworow losuje sposrod 3 roznych animacji i roznych wartosci ataku i zycia." +
             "Walka odbywa sie turowo(naciskajac przycisk ATTACK). Aby wygrać trzeba pokonać wszystkie potwory " +
             "samemu przy tym nie ginac. Zycie mozna uzupelniac przez mikstury leczace, ktore sa do kupienia za " +
-            "pieniadze dodoawane za pokonanie przeciwnika. Za pieniadze mozna tez ulepszyc atak i kupic mikstury" +
-            " przywracjace kondycje. Jest to wersja probna, mozna dowolnie przedluzyac rozgrywke dolaczajac do listy monsters" +
+            "pieniadze dodawane za pokonanie przeciwnika. Za pieniadze mozna tez ulepszyc atak i kupic mikstury" +
+            " przywracjace kondycje. Jest to wersja probna, mozna dowolnie przedluzyac rozgrywke dolaczajac do listy monsters " +
             "kolejne obiekty klas potworow dziedziczace po klasie Creature";
 
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
 
@@ -41,8 +41,8 @@ namespace AdamSkowronskiLab2Zad1
             player = new Hero(1500, 100, 200, 250, 0); //inicjalicacja początkowych atrybutow gracza
 
             monsters = new List<Creature>(); //inicjalizacja listy przeciwnikow
-            Random rnd = new Random(); // obiekt rnd do generowania wartosci losowych
-            int draw =  rnd.Next(0, 100); //zmienna tymczasowa z wynikiem losowania
+            Random random = new Random(); // obiekt rnd do generowania wartosci losowych
+            int draw =  random.Next(0, 100); //zmienna tymczasowa z wynikiem losowania
             
             if (draw <= 33) 
             {
@@ -57,7 +57,7 @@ namespace AdamSkowronskiLab2Zad1
                 monsters.Add(new MonsterLevel1(350, 250, Properties.Resources.opponentC));
             }
 
-            draw = rnd.Next(0, 100); // kolejne losowanie
+            draw = random.Next(0, 100); // kolejne losowanie
             if (draw <= 33)
             {
                 monsters.Add(new MonsterLevel2(550, 250, Properties.Resources.opponentD));
@@ -71,7 +71,7 @@ namespace AdamSkowronskiLab2Zad1
                 monsters.Add(new MonsterLevel2(600, 200, Properties.Resources.opponentF));
             }
 
-            draw = rnd.Next(0, 100); // kolejne losowanie
+            draw = random.Next(0, 100); // kolejne losowanie
 
             if (draw <= 33)
             {
@@ -182,9 +182,9 @@ namespace AdamSkowronskiLab2Zad1
         private void timerAttackAnimation_Tick(object sender, EventArgs e)
         {
 
-            if (timerAttackAnimation.Interval * timerIndex >= attackAnimationLenght)
+            if (timerAttackAnimation.Interval * timerIndex >= AttackAnimationLenght)
             {
-                pictureBoxHero.Image = Properties.Resources.StandingHero; //przywrocenie animacji pierwotne
+                pictureBoxHero.Image = Properties.Resources.StandingHero; //przywrocenie animacji pierwotnej
                 buttonAttack.Enabled = true; // odblokowanie ataku
                 timerIndex = 0; // zerowanie indexu
                 timerAttackAnimation.Stop(); //zatrzymanie timera
@@ -247,11 +247,11 @@ namespace AdamSkowronskiLab2Zad1
             {
                 if ((player.GetHealth() + 200) <= player.GetMaxHealth())
                 {
+                    player.ChangeHealth(200); //uleczenie gracza
                     float healthPercent = (float)player.GetHealth() / (float)(player.GetMaxHealth()) * (float)100; //zmienna tymczasowa do obliczenia zycia bohatera w %
                     progressBarHeroHealth.Value = (int)healthPercent; //ustawinie paska zycia
-                    labelHealthPotionCounter.Text = healthPotionCounter.ToString(); //ponowne ustawienie pola z licznikiem mikstur leczacych
                     healthPotionCounter--; //dekrementacja licznika
-                    player.ChangeHealth(200); //uleczenie gracza
+                    labelHealthPotionCounter.Text = healthPotionCounter.ToString(); //ponowne ustawienie pola z licznikiem mikstur leczacych
                 }
                 else
                 {
@@ -268,10 +268,17 @@ namespace AdamSkowronskiLab2Zad1
         {
             if (conditionPotionCounter > 0)
             {
-                conditionPotionCounter--; //dekrementacja licznika
-                player.ChangeCondition(35); //uleczenie gracza
-                progressBarCondition.Value = player.GetCondition(); //aktualizacja paska kondycji
-                labelConditionPotionCounter.Text = conditionPotionCounter.ToString(); //ponowne ustawienie pola z licznikiem mikstur leczacych
+                if (player.GetCondition() + 35 <= 100)
+                {
+                    conditionPotionCounter--; //dekrementacja licznika
+                    player.ChangeCondition(35); //dodanie kondycji
+                    progressBarCondition.Value = player.GetCondition(); //aktualizacja paska kondycji
+                    labelConditionPotionCounter.Text = conditionPotionCounter.ToString(); //ponowne ustawienie pola z licznikiem mikstur leczacych
+                }
+                else
+                {
+                    MessageBox.Show(" You cannot have more condition than max value", "Info");
+                }
             }
             else
             {
@@ -291,7 +298,7 @@ namespace AdamSkowronskiLab2Zad1
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(about,"About");
+            MessageBox.Show(About,"About");
         }
     }
 }

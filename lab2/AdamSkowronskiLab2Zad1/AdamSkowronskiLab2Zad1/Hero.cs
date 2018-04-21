@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AdamSkowronskiLab2Zad1
 {
@@ -11,12 +12,12 @@ namespace AdamSkowronskiLab2Zad1
     /// </summary>
     class Hero: Fightable
     {
-        private int Health;
-        private int MaxHealth;
-        private int Condition;
-        private int Damage;
-        private int Money;
-        private int Level;
+        private int health;
+        private int maxHealth;
+        private int condition;
+        private int damage;
+        private int money;
+        private int level;
 
         /// <summary>
         /// konstruktor przypisujacy wszystkie atrybuty bohatera
@@ -29,12 +30,12 @@ namespace AdamSkowronskiLab2Zad1
         /// <param name="level"></param>
         public Hero(int health,int contition,int damage,int money,int level)
         {
-            this.Health = health;
-            this.MaxHealth = health;
-            this.Condition = contition;
-            this.Damage = damage;
-            this.Money = money;
-            this.Level = level;
+            this.health = health;
+            this.maxHealth = health;
+            this.condition = contition;
+            this.damage = damage;
+            this.money = money;
+            this.level = level;
         }
         /// <summary>
         /// implementacja metody ataku z interfejsu fightable
@@ -42,9 +43,9 @@ namespace AdamSkowronskiLab2Zad1
         /// <param name="opponent"></param>
         public void Attack(object opponent)
         {
-            Creature a = (Creature)opponent; //tymczasowa zmienna a, rzutowanie opponent do obiektu klasy Creature
-            a.ChangeHealth(-this.Damage); // zmiana zycia
-            opponent = a; //zmiana argumentu wejsciowego funkcji
+            Creature temporaryCreature = (Creature)opponent; //tymczasowa zmienna a, rzutowanie opponent do obiektu klasy Creature
+            temporaryCreature.ChangeHealth(-this.damage); // zmiana zycia
+            opponent = temporaryCreature; //zmiana argumentu wejsciowego funkcji
         }
         /// <summary>
         /// implementacja 2 metody interfejsu do zmiany zycia
@@ -52,57 +53,58 @@ namespace AdamSkowronskiLab2Zad1
         /// <param name="value"></param>
         public void ChangeHealth(int value)
         {
-            Health += value;
+            health += value;
         }
 
         public void ChangeCondition(int value)
         {
-            Condition += value;
+            condition += value;
         }
 
         public void ChangeAttack(int value)
         {
-            Damage += value;
+            damage += value;
         }
 
         public void ChangeMoney(int value)
         {
-            Money += value;
+            money += value;
         }
 
         public void LevelUp()
         {
-            Level += 1;
+            level += 1;
+            MessageBox.Show("LEVEL UP","Info");
         }
 
         public int GetMoney()
         {
-            return Money;
+            return money;
         }
 
         public int GetHealth()
         {
-            return Health;
+            return health;
         }
 
         public int GetMaxHealth()
         {
-            return MaxHealth;
+            return maxHealth;
         }
 
         public int GetCondition()
         {
-            return Condition;
+            return condition;
         }
 
         internal int GetLevel()
         {
-            return Level;
+            return level;
         }
 
         public int GetDamage()
         {
-            return Damage;
+            return damage;
         }
     }
 }
