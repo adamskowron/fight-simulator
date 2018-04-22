@@ -69,7 +69,7 @@
             this.buttonAttack.TabIndex = 1;
             this.buttonAttack.Text = "Attack";
             this.buttonAttack.UseVisualStyleBackColor = true;
-            this.buttonAttack.Click += new System.EventHandler(this.buttonAttack_Click);
+            this.buttonAttack.Click += new System.EventHandler(this.ButtonAttack_Click);
             // 
             // buttonUseHealthPotion
             // 
@@ -80,7 +80,7 @@
             this.buttonUseHealthPotion.TabIndex = 2;
             this.buttonUseHealthPotion.Text = "Use Health Potion";
             this.buttonUseHealthPotion.UseVisualStyleBackColor = true;
-            this.buttonUseHealthPotion.Click += new System.EventHandler(this.buttonUseHealthPotion_Click);
+            this.buttonUseHealthPotion.Click += new System.EventHandler(this.ButtonUseHealthPotion_Click);
             // 
             // buttonUseConditionPotion
             // 
@@ -91,7 +91,7 @@
             this.buttonUseConditionPotion.TabIndex = 3;
             this.buttonUseConditionPotion.Text = "Use Condition Potion";
             this.buttonUseConditionPotion.UseVisualStyleBackColor = true;
-            this.buttonUseConditionPotion.Click += new System.EventHandler(this.buttonUseConditionPotion_Click);
+            this.buttonUseConditionPotion.Click += new System.EventHandler(this.ButtonUseConditionPotion_Click);
             // 
             // pictureBoxOpponent
             // 
@@ -247,7 +247,7 @@
             // 
             // timerAttackAnimation
             // 
-            this.timerAttackAnimation.Tick += new System.EventHandler(this.timerAttackAnimation_Tick);
+            this.timerAttackAnimation.Tick += new System.EventHandler(this.TimerAttackAnimation_Tick);
             // 
             // buttonUpgradeAttack
             // 
@@ -259,7 +259,7 @@
             this.buttonUpgradeAttack.TabIndex = 18;
             this.buttonUpgradeAttack.Text = "UPGRADE ATTACK (150$)";
             this.buttonUpgradeAttack.UseVisualStyleBackColor = true;
-            this.buttonUpgradeAttack.Click += new System.EventHandler(this.buttonUpgradeAttack_Click);
+            this.buttonUpgradeAttack.Click += new System.EventHandler(this.ButtonUpgradeAttack_Click);
             // 
             // buttonBuyHealthPotion
             // 
@@ -271,7 +271,7 @@
             this.buttonBuyHealthPotion.TabIndex = 19;
             this.buttonBuyHealthPotion.Text = "BuyHealthPotion(50$)";
             this.buttonBuyHealthPotion.UseVisualStyleBackColor = true;
-            this.buttonBuyHealthPotion.Click += new System.EventHandler(this.buttonBuyHealthPotion_Click);
+            this.buttonBuyHealthPotion.Click += new System.EventHandler(this.ButtonBuyHealthPotion_Click);
             // 
             // buttonConditionPotion
             // 
@@ -283,7 +283,7 @@
             this.buttonConditionPotion.TabIndex = 20;
             this.buttonConditionPotion.Text = "Buy Condition Potion(25$)";
             this.buttonConditionPotion.UseVisualStyleBackColor = true;
-            this.buttonConditionPotion.Click += new System.EventHandler(this.buttonConditionPotion_Click);
+            this.buttonConditionPotion.Click += new System.EventHandler(this.ButtonConditionPotion_Click);
             // 
             // menuStrip1
             // 
@@ -303,7 +303,7 @@
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
             this.restartToolStripMenuItem.Size = new System.Drawing.Size(78, 36);
             this.restartToolStripMenuItem.Text = "Restart";
-            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
+            this.restartToolStripMenuItem.Click += new System.EventHandler(this.RestartToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -312,14 +312,14 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(100, 36);
             this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // autorToolStripMenuItem
             // 
             this.autorToolStripMenuItem.Name = "autorToolStripMenuItem";
             this.autorToolStripMenuItem.Size = new System.Drawing.Size(69, 36);
             this.autorToolStripMenuItem.Text = "Autor";
-            this.autorToolStripMenuItem.Click += new System.EventHandler(this.autorToolStripMenuItem_Click);
+            this.autorToolStripMenuItem.Click += new System.EventHandler(this.AutorToolStripMenuItem_Click);
             // 
             // MainWindow
             // 

@@ -23,6 +23,7 @@ namespace AdamSkowronskiLab2Zad1
         {
             health += value; 
         }
+        //gettery
          public int GetHealth()
         {
             return health;
@@ -31,7 +32,7 @@ namespace AdamSkowronskiLab2Zad1
         {
             return maxHealth;
         }
-        public System.Drawing.Bitmap GetImage() //getter obrazka
+        public System.Drawing.Bitmap GetImage() 
         {
             return image;
         }

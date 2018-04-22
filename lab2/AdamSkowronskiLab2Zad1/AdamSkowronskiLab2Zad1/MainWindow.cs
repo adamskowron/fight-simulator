@@ -42,29 +42,29 @@ namespace AdamSkowronskiLab2Zad1
 
             monsters = new List<Creature>(); //inicjalizacja listy przeciwnikow
             Random random = new Random(); // obiekt rnd do generowania wartosci losowych
-            int draw =  random.Next(0, 100); //zmienna tymczasowa z wynikiem losowania
+            int draw =  random.Next(0, 100); //zmienna tymczasowa z wynikiem losowania od 0 do 100
             
             if (draw <= 33) 
             {
-                monsters.Add(new MonsterLevel1(350, 250,Properties.Resources.opponentA));
+                monsters.Add(new MonsterLevel1(400, 250,Properties.Resources.opponentA));
             }
             else if (draw <= 66)
             {
-                monsters.Add(new MonsterLevel1(400, 200, Properties.Resources.opponentB));
+                monsters.Add(new MonsterLevel1(450, 200, Properties.Resources.opponentB));
             }
             else
             {
-                monsters.Add(new MonsterLevel1(350, 250, Properties.Resources.opponentC));
+                monsters.Add(new MonsterLevel1(420, 250, Properties.Resources.opponentC));
             }
 
             draw = random.Next(0, 100); // kolejne losowanie
             if (draw <= 33)
             {
-                monsters.Add(new MonsterLevel2(550, 250, Properties.Resources.opponentD));
+                monsters.Add(new MonsterLevel2(580, 250, Properties.Resources.opponentD));
             }
             else if (draw <= 66)
             {
-                monsters.Add(new MonsterLevel2(500, 250, Properties.Resources.opponentE));
+                monsters.Add(new MonsterLevel2(620, 250, Properties.Resources.opponentE));
             }
             else
             {
@@ -75,15 +75,15 @@ namespace AdamSkowronskiLab2Zad1
 
             if (draw <= 33)
             {
-                monsters.Add(new MonsterLevel3(350, 250, Properties.Resources.opponentG));
+                monsters.Add(new MonsterLevel3(680, 250, Properties.Resources.opponentG));
             }
             else if (draw <= 66)
             {
-                monsters.Add(new MonsterLevel3(400, 200, Properties.Resources.opponentH));
+                monsters.Add(new MonsterLevel3(700, 200, Properties.Resources.opponentH));
             }
             else
             {
-                monsters.Add(new MonsterLevel3(350, 250, Properties.Resources.opponentI));
+                monsters.Add(new MonsterLevel3(650, 250, Properties.Resources.opponentI));
             }
 
             // w liscie monsters znajduja sie 3 elementy - od najslabszego przeciwnika do najmocniejszego
@@ -93,7 +93,12 @@ namespace AdamSkowronskiLab2Zad1
             labelCashCounter.Text = player.GetMoney().ToString();
         }
 
-        private void buttonAttack_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Wcisniecie przycisku attack
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonAttack_Click(object sender, EventArgs e)
         {
             if (player.GetCondition() < 20)
             {
@@ -179,7 +184,7 @@ namespace AdamSkowronskiLab2Zad1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void timerAttackAnimation_Tick(object sender, EventArgs e)
+        private void TimerAttackAnimation_Tick(object sender, EventArgs e)
         {
 
             if (timerAttackAnimation.Interval * timerIndex >= AttackAnimationLenght)
@@ -196,7 +201,12 @@ namespace AdamSkowronskiLab2Zad1
             }
         }
 
-        private void buttonUpgradeAttack_Click(object sender, EventArgs e)
+        /// <summary>
+        /// wcisniecie przyisku upgrade attakck
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonUpgradeAttack_Click(object sender, EventArgs e)
         {
             if (player.GetMoney() >= 150) //sprawdzenie czy jest wystarczajca ilosc pieniedzy
             {
@@ -211,7 +221,12 @@ namespace AdamSkowronskiLab2Zad1
             }
         }
 
-        private void buttonBuyHealthPotion_Click(object sender, EventArgs e)
+        /// <summary>
+        /// wcisniecie przycisku buy health button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonBuyHealthPotion_Click(object sender, EventArgs e)
         {
             if(player.GetMoney() >= 50)
             {
@@ -224,9 +239,14 @@ namespace AdamSkowronskiLab2Zad1
             {
                 MessageBox.Show("Not enought money", "Info");
             }
-        } 
+        }
 
-        private void buttonConditionPotion_Click(object sender, EventArgs e)
+        /// <summary>
+        /// wcisniecie przycisku buy condition button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonConditionPotion_Click(object sender, EventArgs e)
         {
             if (player.GetMoney() >= 25)
             {
@@ -241,7 +261,12 @@ namespace AdamSkowronskiLab2Zad1
             }
         }
 
-        private void buttonUseHealthPotion_Click(object sender, EventArgs e)
+        /// <summary>
+        /// wcisniecie przycisku use health potion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonUseHealthPotion_Click(object sender, EventArgs e)
         {
             if (healthPotionCounter > 0)
             {
@@ -264,11 +289,16 @@ namespace AdamSkowronskiLab2Zad1
             }
         }
 
-        private void buttonUseConditionPotion_Click(object sender, EventArgs e)
+        /// <summary>
+        /// wcisniecie przycisku use condition potion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonUseConditionPotion_Click(object sender, EventArgs e)
         {
             if (conditionPotionCounter > 0)
             {
-                if (player.GetCondition() + 35 <= 100)
+                if (player.GetCondition() + 35 <= 100) //sprzwdzenie czy po uzyciu kondycja nie przekroczy 100
                 {
                     conditionPotionCounter--; //dekrementacja licznika
                     player.ChangeCondition(35); //dodanie kondycji
@@ -286,17 +316,32 @@ namespace AdamSkowronskiLab2Zad1
             }
         }
 
-        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// reset
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RestartToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Restart();
         }
 
-        private void autorToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// informacje o autorze
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AutorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Adam Skowronski","Autor");
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// wyswietlenie informacji o programie
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(About,"About");
         }

@@ -8,15 +8,17 @@ namespace AdamSkowronskiLab2Zad1
 {
     class MonsterLevel3: Creature, Fightable
     {
+        /// <summary>
+        /// Nadpisanie metody Attack
+        /// </summary>
+        /// <param name="opponent"></param>
         public override void Attack(object opponent)
         {
             Hero temporaryHero = (Hero)opponent; //kopia argumentu wejsciowgo i rzutowanie na Hero
             Random random = new Random();
-            if (random.Next(0, 100) > 40) //szansa 40%
+            if (random.Next(0, 100) > 40)
             {
-
                 temporaryHero.ChangeHealth(-damage);
-
             }
             else
             {
@@ -26,17 +28,21 @@ namespace AdamSkowronskiLab2Zad1
             opponent = temporaryHero; //ustawienie argumentu wejsciowego
         }
 
+        /// <summary>
+        /// nadpisanie metody ChngeHealth
+        /// </summary>
+        /// <param name="value"></param>
         public override void ChangeHealth(int value)
         {
             health += value;
             Random random = new Random();
             if (random.Next(0, 100) < 60) //szansa 60%
             {
-                health += 100; //uzdrowienie 100 pkt zdrowia
+                health += 100; //dodatkowe uzdrowienie 100 pkt zdrowia
             }
             else
             {
-                health += 300; //duze uzdrowienie
+                health += 300; //dodatkowe duze uzdrowienie
             }
         }
         /// <summary>
