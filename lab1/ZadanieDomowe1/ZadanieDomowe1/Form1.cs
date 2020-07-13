@@ -177,7 +177,7 @@ namespace ZadanieDomowe1
             }
         }
 
-        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RestartToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Restart(); //ponowne wlaczenie aplikacji
         }
