@@ -1,0 +1,30 @@
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.exe.config
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.exe
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.pdb
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.Form1.resources
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.Properties.Resources.resources
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csproj.GenerateResource.Cache
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csproj.CoreCompileInputs.cache
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.exe
+C:\Users\Adam\Source\Repos\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.pdb
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.exe.config
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.exe
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.pdb
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.Properties.Resources.resources
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csproj.GenerateResource.Cache
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csproj.CoreCompileInputs.cache
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.exe
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.pdb
+C:\Users\Adam\Desktop\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.MainWindow.resources
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.exe.config
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.exe
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\bin\Debug\AdamSkowronskiLab2Zad1.pdb
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.MainWindow.resources
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.Properties.Resources.resources
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csproj.GenerateResource.Cache
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.csproj.CoreCompileInputs.cache
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.exe
+C:\Users\Adam\Desktop\usefull\git\Programowanie C#\kredek\Adam Skowroński\lab2\AdamSkowronskiLab2Zad1\AdamSkowronskiLab2Zad1\obj\Debug\AdamSkowronskiLab2Zad1.pdb
