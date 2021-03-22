@@ -1,0 +1,10 @@
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\obj\Debug\Lab3AdamSkowronski.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\obj\Debug\Lab3AdamSkowronski.Form1.resources
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\obj\Debug\Lab3AdamSkowronski.Properties.Resources.resources
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\obj\Debug\Lab3AdamSkowronski.csproj.GenerateResource.Cache
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\obj\Debug\Lab3AdamSkowronski.csproj.CoreCompileInputs.cache
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\bin\Debug\Lab3AdamSkowronski.exe.config
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\bin\Debug\Lab3AdamSkowronski.exe
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\bin\Debug\Lab3AdamSkowronski.pdb
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\obj\Debug\Lab3AdamSkowronski.exe
+C:\Users\Adam\Source\Repos\Lab3AdamSkowronski\Lab3AdamSkowronski\obj\Debug\Lab3AdamSkowronski.pdb
